@@ -1,4 +1,4 @@
-# 💻 C Programming Practice
+# 💻 Python Programming Practice
 
 > 📒 2026학년도 1학년 2학기 **Python Programming** 실습코드입니다.
 
