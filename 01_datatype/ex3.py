@@ -14,3 +14,12 @@ print("apple" > "apble")
 # bool() 내장함수
 print(bool(3))
 print(bool(0))
+print(bool("Hello"))
+print(bool(""))
+print(bool([1]))
+print(bool([]))
+
+# None 자료형
+a = None
+print(a, type(a))
+print(bool(a))

@@ -33,3 +33,21 @@ print("Hello" + str(10))
 
 print("10" + "2")
 print(int("10") + int("2"))
+
+# 문자열 포맷팅 (f-string)
+name = "pororo"
+age = 23
+
+print(f"이름: {name}, 나이: {age}살")
+print(f"내년 나이: {age + 1}살")
+
+pi = 3.141592
+
+print(f"{pi:.3f}")
+print(f"{pi:.0f}")
+
+num = 123456789
+print(f"{num:,}")
+print(f"{num:15d}")
+print(f"{num:<15d}")
+print(f"{num:015,d}")
