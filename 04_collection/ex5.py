@@ -121,19 +121,37 @@ print(hash((1,2)))
 
 d = {"kor": 90, "mat": 85, "eng": 80}
 
+print(len(d))
+# print(sum(d))
+print(sum(d.values()))
+print(min(d), min(d.values()))
+print(max(d), max(d.values()))
 
+print(sorted(d))
+print(dict(sorted(d.items())))
+
+# value 기준 정렬하기
+def key(x):
+    return x[1]
+
+print(dict(sorted(d.items(), key=key)))
+print(dict(sorted(d.items(), key=key, reverse=True)))
 
 # 정렬 기준 설정하기
 # lambda: 이름 없는(익명) 한 줄짜리 함수를 만듦
 # lambda 매개변수1, 매개변수2, ... : 표현식
 
-
+print(dict(sorted(d.items(), key=lambda x: x[1])))
 
 # 딕셔너리 합치기
 d2 = {"sci": 95, "prog": 100}
-
+# print(d + d2)
 
 # 딕셔너리 반복하기
-
+# print(d*2)
 
 # 멤버십 연산자
+print("kor" in d)
+print("art" in d)
+print(90 in d.values())
+print(100 in d.values())
