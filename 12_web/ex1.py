@@ -34,35 +34,6 @@ import streamlit as st
 
 st.title("Streamlit 기본 문법")
 
-st.html("""
-<script src="https://js.tosspayments.com/v2/standard"></script>
-<script>
-const clientKey = "test_ck_ALnQvDd2VJPpwB0wXqYY8Mj7X41m";
-const customerKey = "mZevPyE4SO0a9Sidpgfq8";
-const tossPayments = TossPayments(clientKey);
-const payment = tossPayments.payment({ customerKey });
-payment.requestPayment({
-  method: "CARD",
-  amount: {
-    currency: "KRW",
-    value: 50000,
-  },
-  orderId: "TKIY_B4JiO-ZPgnH-09-s",
-  orderName: "토스 티셔츠 외 2건",
-  successUrl: window.location.origin + "/success.html",
-  failUrl: window.location.origin + "/fail.html",
-  customerEmail: "customer123@gmail.com",
-  customerName: "김토스",
-  card: {
-    useEscrow: false,
-    flowMode: "DEFAULT",
-    useCardPoint: false,
-    useAppCardOnly: false,
-  },
-});
-</script>
-""", unsafe_allow_javascript=True)
-
 st.divider()    # 구분선
 
 st.header("1. 텍스트 출력")
